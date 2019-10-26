@@ -6,6 +6,15 @@ __pycache__/
 # C extensions
 *.so
 
+# logs
+logs/
+
+# pyCharm
+.idea/
+
+# Api keys
+.env
+
 # Distribution / packaging
 .Python
 build/
