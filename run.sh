@@ -1,3 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-python run.py
+pip install --upgrade pip==19.0.1
+pip install -r requirements.txt
+
+python run_service.py $@
