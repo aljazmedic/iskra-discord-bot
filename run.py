@@ -153,6 +153,10 @@ def main():
 		bot.add_cog(Extension(bot))
 	"""
 
+	from cogs.weather import WeatherCog
+
+	bot.add_cog(WeatherCog(bot))
+
 	token = os.getenv("DISCORD_API_KEY")
 	bot.run(token)
 
