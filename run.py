@@ -153,6 +153,10 @@ def main():
 		bot.add_cog(Extension(bot))
 	"""
 
+	from cogs.music_commands import MusicCog
+
+	bot.add_cog(MusicCog(bot))
+
 	token = os.getenv("DISCORD_API_KEY")
 	bot.run(token)
 
