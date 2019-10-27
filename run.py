@@ -153,6 +153,10 @@ def main():
 		bot.add_cog(Extension(bot))
 	"""
 
+	from cogs.moderation import ModerationCog
+
+	bot.add_cog(ModerationCog(bot))
+
 	token = os.getenv("DISCORD_API_KEY")
 	bot.run(token)
 
